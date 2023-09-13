@@ -2,3 +2,4 @@ venv
 .env
 Пример
 __pycache__
+.idea

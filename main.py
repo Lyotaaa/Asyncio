@@ -1,7 +1,9 @@
-from more_itertools import chunked
-from fun_async import get_characters
+from datetime import datetime
+from fun_async import main
 import asyncio
 
 
 if __name__ == "__main__":
-    asyncio.run(get_characters(1))
+    start = datetime.now()
+    asyncio.run(main())
+    print(datetime.now() - start)

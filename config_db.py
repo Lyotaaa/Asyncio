@@ -18,4 +18,3 @@ engine = create_async_engine(PG_DSN)
 Session = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
 Base = declarative_base()
-
