@@ -1,3 +1,45 @@
+# Установка и запуск
+
+## Подготовка
+
+Для запуска необходимо заполнить файл [.env.template](env.template)
+```
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+DB_HOST=127.0.0.1
+DB_PORT=5431
+```
+
+## Создайте вертуально окружение
+```
+python -m venv ...
+```
+## Активируйте окружение
+```
+.../Scripts/Activate
+```
+## Установите зависимости
+```
+pip install -r requirements.txt
+```
+## Запустить файл docker compose командой. Будет создана БД.
+```
+docker compose up -d
+```
+## Запустите файл main.py
+[main.py](main.py)
+
+## Подключитесь к БД для проверки. Параметры для подключения такие же как указали в [.env.template](env.template). Обратите внимение на PORT: 5431
+```
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+DB_HOST=127.0.0.1
+DB_PORT=5431
+```
+```
+```
 # Домашнее задание к лекции «Asyncio»
 
 В этом задании мы будем выгружать из API персонажей Start Wars и загружать в базу данных.<br>
