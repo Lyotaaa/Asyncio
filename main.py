@@ -1,5 +1,5 @@
 from datetime import datetime
-from fun_async import main
+from functions_async import main
 import asyncio
 
 
